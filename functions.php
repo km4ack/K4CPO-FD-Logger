@@ -29,7 +29,8 @@ function ShowLogs()
 function ShowLast($station,$band)
 {
     global $mysqldb;
-    $ret = $mysqldb->mysqlselectrows("Select * from " . DATABASE . ".log where station='" . $station . "' and band='" . $band . "' order  by dt desc limit 15");
+    //$ret = $mysqldb->mysqlselectrows("Select * from " . DATABASE . ".log where station='" . $station . "' and band='" . $band . "' order  by dt desc limit 15");
+    $ret = $mysqldb->mysqlselectrows("Select * from " . DATABASE . ".log where station='" . $station . "'  order  by dt desc ");
     $line = "<table border=1><tr><th>Call</th><th>Band</th><th>Mode</th><th>Class</th><th>Section</th><th>Date/time</th></tr>";
     if ($ret){
         foreach ($ret as $val){
