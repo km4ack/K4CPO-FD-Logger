@@ -18,7 +18,7 @@ foreach($contest as $key=>$val){
 }
 if ($ar){
     foreach($ar as $val){
-        $line .= "QSO: " . $val['band'] . " " . substr($val['mode'], 0, 2) . " " . $val['dt'] . " " . $val['station'] . " " . $contest['CATEGORY:'] . " " . $contest['ADDRESS-STATE:'] . " " . $val['call'] . " " . $val['class'] . " " . $val['section'] . "\n";
+        $line .= "QSO: " . $val['band'] . " " . substr($val['mode'], 0, 2) . " " . $val['dt'] . " " . $val['station'] . " " . $contest['CATEGORY:'] . " " . $contest['ARRL-SECTION:'] . " " . $val['call'] . " " . $val['class'] . " " . $val['section'] . "\n";
     }
 }
 $line .= $contestend;
