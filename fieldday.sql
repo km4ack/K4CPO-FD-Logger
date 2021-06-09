@@ -142,8 +142,8 @@ INSERT INTO `sectabb` (`id`, `name`, `abb`, `section`) VALUES
 (81, 'Saskatchewan', 'SK', 'CN'),
 (82, 'Alberta', 'AB', 'CN'),
 (83, 'British Columbia', 'BC', 'CN'),
-(84, 'Northern Territories', 'NT', 'CN');
-
+(84, 'Northern Territories', 'NT', 'CN'),
+(85, 'DX', 'DX', 'DX');
 
 DROP TABLE IF EXISTS `settings`;
 CREATE TABLE IF NOT EXISTS `settings` (
